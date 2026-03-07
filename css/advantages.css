@@ -1,0 +1,27 @@
+/* ======== ADVANTAGES ======== */
+
+/* ---- SVG-ICONS ---- */
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  margin-bottom: 8px;
+}
+
+/* ---- LIST ---- */
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  flex-basis: calc((100% - (24px + 24px + 24px)) / 4);
+}

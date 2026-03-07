@@ -1,0 +1,76 @@
+/* ---- OUR-TEM - SOCIALS ---*/
+.team-svg {
+  fill: #f4f4fd;
+}
+
+.team-social-link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #404bbf;
+}
+
+.team-social-wrapper-link {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* ---- FOOTER - MEDIA - SOCIAL ---- */
+.footer-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.media-wrapper {
+  margin-right: 80px;
+}
+
+.footer-media-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-media-text {
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-media-link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-media-link:hover,
+.footer-media-link:focus {
+  background-color: #31d0aa;
+}

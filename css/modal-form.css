@@ -1,0 +1,200 @@
+/* ---- Form-title ---- */
+
+.modal-title {
+  font-weight: 500;
+  text-align: center;
+  color: #2e2f42;
+
+  margin-bottom: 16px;
+}
+
+/* ---- Form-fields ---- */
+
+.form-field-wrapper {
+  margin-bottom: 8px;
+}
+
+.form-field-label {
+  display: block; /* чтобы добавить margin-bottom */
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: #8e8f99;
+}
+
+/* ---- Input style ---- */
+
+.form-input-wrapper {
+  position: relative;
+}
+
+.form-field-input {
+  width: 100%;
+  height: 40px;
+
+  padding-left: 38px;
+
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+
+  outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-input:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+
+/* ---- Icons ---- */
+
+.form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* первый вариант - покраски icons через :focus-within
+.form-input-wrapper:focus-within .form-field-icon {
+  fill: #4d5ae5;
+} */
+
+/* второй вариант - через сестринский селектор '+', сосед '~' */
+.form-field-input:focus + .form-field-icon {
+  fill: #4d5ae5;
+}
+
+/* ---- TEXTAREA ---- */
+
+.form-textarea-wrapper {
+  margin-bottom: 16px;
+}
+
+.form-textarea-message {
+  width: 100%;
+  height: 120px;
+
+  resize: none;
+  padding: 8px 16px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+
+  outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+
+  background-color: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea-message:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+
+.form-textarea-message::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+/* ---- CHECKBOX ---- */
+.form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.form-custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 8px;
+
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+
+  cursor: pointer;
+  fill: transparent;
+
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-policy-checkbox:checked
+  + .form-field-checkbox-label
+  > .form-custom-checkbox {
+  border: none;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.form-policy-checkbox:focus
+  + .form-field-checkbox-label
+  > .form-custom-checkbox {
+  outline: 1px solid #404bbf;
+}
+
+.form-field-checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: #8e8f99;
+}
+
+.form-link-policy {
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #4d5ae5;
+
+  text-decoration: underline;
+}
+
+.form-submit-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  padding: 16px 66px;
+  border: none;
+  border-radius: 4px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+  background-color: #404bbf;
+}
