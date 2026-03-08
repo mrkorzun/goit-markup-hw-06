@@ -29,7 +29,6 @@
   justify-content: center;
   gap: 24px;
 }
-
 /* ---- FOOTER - MEDIA - SOCIAL ---- */
 .footer-wrapper {
   display: flex;
@@ -38,17 +37,19 @@
 }
 
 .media-wrapper {
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .footer-media-list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
 .footer-media-text {
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
 
   color: #ffffff;
   margin-bottom: 16px;

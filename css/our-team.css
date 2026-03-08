@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 74px 24px;
+  gap: 74px 0;
 
   /* --- Tablet --- */
   @media screen and (min-width: 768px) {
@@ -43,6 +43,8 @@
   font-size: 20px;
 
   line-height: 1.2;
+
+  color: #2e2f42;
 }
 
 .team-text {

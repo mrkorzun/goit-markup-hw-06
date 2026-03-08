@@ -67,7 +67,7 @@
 
   /* --- Tablet --- */
   @media screen and (min-width: 768px) {
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   /* --- Desktop --- */
@@ -77,11 +77,9 @@
 }
 
 .advantages-item {
-  /* flex-basis: calc((100% - (24px * 3)) / 4); */
-
   /* --- Tablet --- */
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - (24px * 3)) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   /* --- Desktop --- */

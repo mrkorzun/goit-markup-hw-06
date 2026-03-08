@@ -1,11 +1,18 @@
 /* ======== FOOTER ======== */
 .footer-section {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #2e2f42;
+
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    padding: 100px 0;
+  }
 }
 
-.footer-content {
-  margin-right: 120px;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 .footer-text {
@@ -18,12 +25,12 @@
 }
 
 /* --- FOOTER FORM --- */
-/* ---- FORM ---- */
-/* .footer-forma-wrapper {
+
+.footer-form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+  flex-direction: column;
+  gap: 16px;
+}
 
 .footer-form-text {
   margin-bottom: 16px;
@@ -34,13 +41,8 @@
   color: #ffffff;
 }
 
-.footer-form {
-  display: flex;
-  gap: 24px;
-}
-
 .input-mail {
-  width: 264px;
+  width: 100%;
   height: 40px;
 
   padding-left: 16px;
