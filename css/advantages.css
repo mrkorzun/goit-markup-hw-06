@@ -1,27 +1,90 @@
 /* ======== ADVANTAGES ======== */
 
+.advantages-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 1.1;
+  text-align: center;
+
+  color: #2e2f42;
+
+  /* --- Tablet --- */
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    font-weight: 500;
+    font-size: 20px;
+
+    text-align: left;
+  }
+}
+
+.advantages-text {
+  font-weight: 500;
+
+  /* --- Tablet --- */
+
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    font-weight: 400;
+  }
+}
+
 /* ---- SVG-ICONS ---- */
 
 .advantages-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
+  display: none;
+  /* --- Tablet --- */
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
-  margin-bottom: 8px;
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+
+    margin-bottom: 8px;
+  }
 }
 
 /* ---- LIST ---- */
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
+
+  /* --- Tablet --- */
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+  }
+
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    gap: 24px;
+  }
 }
 
 .advantages-item {
-  flex-basis: calc((100% - (24px + 24px + 24px)) / 4);
+  /* flex-basis: calc((100% - (24px * 3)) / 4); */
+
+  /* --- Tablet --- */
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - (24px * 3)) / 2);
+  }
+
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    flex-basis: calc((100% - (24px * 3)) / 4);
+  }
 }
