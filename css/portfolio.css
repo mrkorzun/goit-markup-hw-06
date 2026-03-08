@@ -4,6 +4,18 @@
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
+
+  /* --- Tablet --- */
+  @media screen and (min-width: 768px) {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    row-gap: 40px;
+    column-gap: 24px;
+  }
 }
 
 .portfolio-title {

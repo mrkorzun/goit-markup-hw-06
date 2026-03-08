@@ -7,18 +7,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 74px;
-  column-gap: 24px;
+  gap: 74px 24px;
 
   /* --- Tablet --- */
   @media screen and (min-width: 768px) {
-    row-gap: 64px;
-    column-gap: 24px;
-  }
-
-  /* --- Desktop --- */
-  @media screen and (min-width: 1158px) {
-    gap: 24px;
+    gap: 64px 24px;
   }
 }
 
@@ -29,6 +22,12 @@
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+  }
 }
 
 .team-thumb {
