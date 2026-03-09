@@ -15,8 +15,9 @@
 }
 
 .header-container .logo {
-  margin-right: 76px;
+  /* margin-right: 76px; */
   /* padding: 24px 0; */
+  padding: 16px;
 }
 
 .header-container .logo-part {

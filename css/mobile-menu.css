@@ -1,0 +1,33 @@
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  padding: 72px 16px 40px;
+
+  background-color: #ffffff;
+}
+
+.burger-btn {
+  display: flex;
+  padding: 0;
+
+  background-color: transparent;
+  border: transparent;
+}
+
+.burger-btn-icon {
+  fill: #2f2f37;
+}
+
+.mobile-menu .team-social-wrapper-link {
+  justify-content: flex-start;
+}
+
+.mobile-menu
