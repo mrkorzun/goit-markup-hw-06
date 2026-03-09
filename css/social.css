@@ -37,7 +37,10 @@
 }
 
 .media-wrapper {
-  /* margin-right: 80px; */
+  /* --- Desktop --- */
+  @media screen and (min-width: 1158px) {
+    margin-right: 80px;
+  }
 }
 
 .footer-media-list {
@@ -49,10 +52,14 @@
 .footer-media-text {
   font-weight: 500;
   font-size: 16px;
-  text-align: center;
 
   color: #ffffff;
   margin-bottom: 16px;
+
+  /* --- Tablet --- */
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer-media-link {
