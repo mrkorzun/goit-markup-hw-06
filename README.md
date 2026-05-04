@@ -83,8 +83,8 @@ goit-markup-hw-06/
 No build step is required — the project is plain HTML and CSS.
 
 ```bash
-git clone https://github.com/mrkorzun/goit-markup-hw-06.git
-cd goit-markup-hw-06
+git clone https://github.com/mrkorzun/WebStudio-Landing-Page
+cd WebStudio-Landing-Page
 # Open index.html in your browser, or serve with any static server:
 npx serve .
 ```
