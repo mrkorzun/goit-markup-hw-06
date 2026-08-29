@@ -114,6 +114,6 @@ This was the capstone project of the GoIT Markup course. Across the six homework
 
 ## 👤 Author
 
-**Andrii Korzun**
+**Romario Korzun**
 
 - GitHub: [@mrkorzun](https://github.com/mrkorzun)
